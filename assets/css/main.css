@@ -18,6 +18,7 @@
 .header__navbar-item{
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
 }
 
 .header__navbar-item,
@@ -29,7 +30,17 @@
     font-weight: 300;
 }
 
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
 .header__navbar-item:hover,
+.header__navbar-icon-link:hover,
 .header__navbar-item-link:hover {
     color:rgba(255, 255, 255, 0.7);
     cursor: pointer;
@@ -54,4 +65,14 @@
 .header__navbar-icon-link{
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon{
+    font-style: 1.8rem;
+    margin: 0 4px;
+}
+
+.header__navbar-title--no-pointer{
+    cursor: text;
+    color: var(--white-color);
 }
